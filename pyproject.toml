@@ -13,6 +13,7 @@ selenium = "<4"
 
 
 [tool.poetry.group.dev.dependencies]
+django-types = "^0.16.0"
 
 [build-system]
 requires = ["poetry-core"]
