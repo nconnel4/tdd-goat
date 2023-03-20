@@ -16,7 +16,14 @@ selenium = "<4"
 django-types = "^0.16.0"
 black = "^23.1.0"
 redgreenunittest = "^0.1.1"
+django-stubs = {extras = ["compatible-mypy"], version = "^1.16.0"}
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "superlist.settings"
