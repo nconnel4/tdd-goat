@@ -6,7 +6,7 @@ from fabric.contrib.files import append, exists
 REPO_URL = "https://github.com/nconnel4/tdd-goat"
 
 
-def depoy():
+def deploy():
     site_folder = f"/home/{env.user}/sites/{env.host}"
     run(f"mkdir -p {site_folder}")
     with cd(site_folder):
